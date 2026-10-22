@@ -61,10 +61,17 @@ Get-Content .\portfolio-2-query-optimisation\queries.sql -Raw | docker compose e
 
 ### Results after the new indexes
 
+<<<<<<< Updated upstream
 - **Q1:** 0.271 ms. What I noticed: it was faster than before (1.099 ms). It still used a bitmap scan but on my new indexes.
 - **Q2:** 4.307 ms. What I noticed: no real change from before (4.246 ms). It still scanned the whole table.
 - **Q3:** 0.132 ms. What I noticed: much faster than before (1.040 ms). It used my new index instead of scanning the whole table.
   
+=======
+* **Q1:** 0.271 ms. What I noticed: it was faster than before (1.099 ms). It still used a bitmap scan, but on my new indexes.
+* **Q2:** 4.307 ms. What I noticed: no real change from before (4.246 ms). It still scanned the whole table.
+* **Q3:** 0.132 ms. What I noticed: much faster than before (1.040 ms). It used my new index instead of scanning the whole table.
+
+>>>>>>> Stashed changes
 ### What I learned
 
 A sequential scan is fine on 5,000 rows, but it will not scale well as the table grows. When I compared before and after, I looked at whether the plan changed (for example from a sequential scan to an index scan) as well as the time.
