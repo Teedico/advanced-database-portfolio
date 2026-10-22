@@ -1,0 +1,36 @@
+[
+  {
+    "studentEmail": "student1@uni.edu",
+    "action": "TRANSFER",
+    "details": {
+      "fromAccountId": 1,
+      "toAccountId": 2,
+      "amount": 1500,
+      "currency": "NGN",
+      "transferId": 5001
+    },
+    "channel": "mobile",
+    "createdAt": "2026-10-16T10:00:00Z"
+  },
+  {
+    "studentEmail": "student2@uni.edu",
+    "action": "LOGIN",
+    "details": {
+      "device": "Android",
+      "ip": "10.0.0.21"
+    },
+    "channel": "mobile",
+    "createdAt": "2026-10-16T09:55:00Z"
+  },
+  {
+    "studentEmail": "admin@uni.edu",
+    "action": "HIGH_VALUE_REVIEW",
+    "details": {
+      "transferId": 4120,
+      "amount": 4800,
+      "decision": "FLAGGED"
+    },
+    "channel": "web",
+    "createdAt": "2026-10-16T11:30:00Z"
+  }
+]
